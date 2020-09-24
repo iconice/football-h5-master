@@ -1,0 +1,85 @@
+html {
+  margin: 0 auto;
+}
+
+// 字体滚动选择
+body {
+  // font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+  font-family: Helvetica, Arial, 'Helvetica Neue', 'Droid Sans', 'Microsoft YaHei', sans-serif;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100% !important;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.styleguide,
+.styleguide * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+// 清除浮动
+
+.clearfix:after,
+.clearfix:before {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*文本折行*/
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-overflow2,
+.text-overflow3,
+.text-overflow4,
+.text-overflow5 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-overflow2 {
+  -webkit-line-clamp: 2;
+}
+
+.text-overflow3 {
+  -webkit-line-clamp: 3;
+}
+
+.text-overflow4 {
+  -webkit-line-clamp: 4;
+}
+
+.text-overflow5 {
+  -webkit-line-clamp: 5;
+}
+
+// 页面公共样式
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
